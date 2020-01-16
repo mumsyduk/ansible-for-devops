@@ -1,0 +1,36 @@
+  - name: Create a first partion
+    parted:
+      state: present
+      device: /dev/sdb
+      number: 1
+      flags: [ lvm ]
+      part_start: 0%
+      part_end: 10%
+      unit: '%'
+  - name: Create second partition
+    parted:
+      state: present
+      device: /dev/sdb
+      number: 2
+      flags: [ lvm ]
+      part_start: 11%
+      part_end: 40%
+      unit: '%'
+  - name: Create third partition
+    parted:
+      state: present
+      device: /dev/sdb
+      number: 3
+      flags: [ lvm ]
+      part_start: 41%
+      part_end: 70%
+      unit: '%'
+  - name: Create fourth partition
+    parted:
+      state: present
+      device: /dev/sdb
+      number: 4
+      flags: [ lvm ]
+      part_start: 71%
+      part_end: 100%
+      unit: '%'

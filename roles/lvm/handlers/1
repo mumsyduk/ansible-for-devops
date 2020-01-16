@@ -1,0 +1,9 @@
+#- name: redhat handler
+#    when: "ansible_os_family == 'RedHat'"
+#    ignore_errors: yes
+#- name: debian handler
+#    when: "ansible_os_family == 'Debian'"
+#    ignore_errors: yes
+#- name: CentOS handler
+#    when: "ansible_os_family == 'CentOS'"
+#    ignore_errors: yes

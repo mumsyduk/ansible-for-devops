@@ -1,0 +1,5 @@
+- name: upgrade all packages on the server
+  yum:
+    name: '*'
+    state: latest
+    register: yum_update

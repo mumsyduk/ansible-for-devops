@@ -1,0 +1,6 @@
+- name: Add ansible user
+  user:
+    name: ansible
+    shell: /bin/bash
+    groups: wheel
+    password: shaggy1981

@@ -1,0 +1,2 @@
+- name: upgrade all packages on the server
+  action: yum name=ansible state=installed
